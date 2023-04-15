@@ -13,7 +13,13 @@ class Stateful extends React.Component {
         this.setState({
             instorduction: "Goodebye!",
             buttonText: "Enter",
-        })
+        }, ()=> {
+        console.log('New state: ',this.state.instorduction);
+        console.log('New state: ',this.state.buttonText);
+
+        });
+        console.log(this.state.instorduction);
+        console.log(this.state.buttonText);
     }
     render(){
         return(
